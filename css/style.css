@@ -241,7 +241,7 @@ html {
 }
 
 .form-container p a,
-.form-container h4 a{
+.form-container h4 a {
     text-decoration: none;
     color: #707070;
 }
@@ -293,7 +293,7 @@ input[type="password"] {
 
 #section1 .left .quote h3 {
     font-size: 3.0rem;
-    color:#fff;
+    color: #fff;
 }
 
 .quote span.writer {

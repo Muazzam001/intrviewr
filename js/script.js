@@ -31,8 +31,7 @@ $(document).ready(function () {
                 $("li#bar4").addClass("active")
                 showVar = "active4";
             }
-        }
-        else {
+        } else {
             $("#section1, #section2, #section3, #section4").removeClass("up on");
             $(this).addClass("old").removeClass("active").next().addClass("active").find(".devices img").addClass("slideInLeft");
             $("#section4.active .top-content .content-container .content").addClass("animated slideInUp");
@@ -127,77 +126,77 @@ $(document).ready(function () {
             , down: 40
         };
         switch (keyCode) {
-        case arrow.left:
-            break;
-        case arrow.up:
-            $("#section1").addClass("first")
-            $(".section.active, .section.last").removeClass("active").prev().removeClass("old").addClass("active").find(".devices img").addClass("slideInLeft");
-            $("#section4").removeClass("last")
+            case arrow.left:
+                break;
+            case arrow.up:
+                $("#section1").addClass("first")
+                $(".section.active, .section.last").removeClass("active").prev().removeClass("old").addClass("active").find(".devices img").addClass("slideInLeft");
+                $("#section4").removeClass("last")
                 //            detector on keyup
-            if ($("#section1").hasClass("active")) {
-                $(".showcase").removeClass(showVar)
-                $(".custom-scrollbar ul li").removeClass("active")
-                $("li#bar1").addClass("active")
-                showVar = "active1"
-            }
-            if ($("#section2").hasClass("active")) {
-                $(".showcase").removeClass(showVar)
-                $(".custom-scrollbar ul li").removeClass("active")
-                $("li#bar2").addClass("active")
-                showVar = "active2"
-            }
-            if ($("#section3").hasClass("active")) {
-                $(".showcase").removeClass(showVar)
-                $(".custom-scrollbar ul li").removeClass("active")
-                $("li#bar3").addClass("active")
-                showVar = "active3"
-            }
-            if ($("#section4").hasClass("active")) {
-                $(".showcase").removeClass(showVar)
-                $(".custom-scrollbar ul li").removeClass("active")
-                $("li#bar4").addClass("active")
-                showVar = "active4"
-            }
-            $(".showcase").addClass(showVar)
-            break;
-        case arrow.right:
-            break;
-        case arrow.down:
-            $("#section4").addClass("last");
-            $(".section.active, .section.first").addClass("old").removeClass("active").next().addClass("active").find(".devices img").addClass("slideInLeft");
-            $("#section1").removeClass("first");
-            //            detector on keyup
-            if ($("#section1").hasClass("active")) {
-                $(".showcase").removeClass(showVar)
-                $(".custom-scrollbar ul li").removeClass("active")
-                $("li#bar1").addClass("active")
-                showVar = "active1"
-            }
-            if ($("#section2").hasClass("active")) {
-                $(".showcase").removeClass(showVar)
-                $(".custom-scrollbar ul li").removeClass("active")
-                $("li#bar2").addClass("active")
-                showVar = "active2"
-            }
-            if ($("#section3").hasClass("active")) {
-                $(".showcase").removeClass(showVar);
-                $(".custom-scrollbar ul li").removeClass("active")
-                $("li#bar3").addClass("active")
-                showVar = "active3"
-            }
-            if ($("#section4").hasClass("active")) {
-                $(".showcase").removeClass(showVar)
-                $(".custom-scrollbar ul li").removeClass("active")
-                $("li#bar4").addClass("active")
-                showVar = "active4"
-            }
-            $(".showcase").addClass(showVar)
-            break;
+                if ($("#section1").hasClass("active")) {
+                    $(".showcase").removeClass(showVar)
+                    $(".custom-scrollbar ul li").removeClass("active")
+                    $("li#bar1").addClass("active")
+                    showVar = "active1"
+                }
+                if ($("#section2").hasClass("active")) {
+                    $(".showcase").removeClass(showVar)
+                    $(".custom-scrollbar ul li").removeClass("active")
+                    $("li#bar2").addClass("active")
+                    showVar = "active2"
+                }
+                if ($("#section3").hasClass("active")) {
+                    $(".showcase").removeClass(showVar)
+                    $(".custom-scrollbar ul li").removeClass("active")
+                    $("li#bar3").addClass("active")
+                    showVar = "active3"
+                }
+                if ($("#section4").hasClass("active")) {
+                    $(".showcase").removeClass(showVar)
+                    $(".custom-scrollbar ul li").removeClass("active")
+                    $("li#bar4").addClass("active")
+                    showVar = "active4"
+                }
+                $(".showcase").addClass(showVar)
+                break;
+            case arrow.right:
+                break;
+            case arrow.down:
+                $("#section4").addClass("last");
+                $(".section.active, .section.first").addClass("old").removeClass("active").next().addClass("active").find(".devices img").addClass("slideInLeft");
+                $("#section1").removeClass("first");
+                //            detector on keyup
+                if ($("#section1").hasClass("active")) {
+                    $(".showcase").removeClass(showVar)
+                    $(".custom-scrollbar ul li").removeClass("active")
+                    $("li#bar1").addClass("active")
+                    showVar = "active1"
+                }
+                if ($("#section2").hasClass("active")) {
+                    $(".showcase").removeClass(showVar)
+                    $(".custom-scrollbar ul li").removeClass("active")
+                    $("li#bar2").addClass("active")
+                    showVar = "active2"
+                }
+                if ($("#section3").hasClass("active")) {
+                    $(".showcase").removeClass(showVar);
+                    $(".custom-scrollbar ul li").removeClass("active")
+                    $("li#bar3").addClass("active")
+                    showVar = "active3"
+                }
+                if ($("#section4").hasClass("active")) {
+                    $(".showcase").removeClass(showVar)
+                    $(".custom-scrollbar ul li").removeClass("active")
+                    $("li#bar4").addClass("active")
+                    showVar = "active4"
+                }
+                $(".showcase").addClass(showVar)
+                break;
         }
     });
     //    form focus
-   // $("#section1 form .form-control").focus(function () {
-     //   $(".form-container, .showcase").addClass("form-fixed")
+    // $("#section1 form .form-control").focus(function () {
+    //   $(".form-container, .showcase").addClass("form-fixed")
     //});
     //    hide clicking outside
     jQuery(document).mouseup(function (e) {
